@@ -8,7 +8,7 @@ namespace ATEA.Models
 {
     public class Message
     {
-        [Required, Key]
+        [Key]
         public int MessageId { get; set; }
 
         [Required, MaxLength(25), MinLength(3)]
@@ -17,6 +17,7 @@ namespace ATEA.Models
         [Required, MinLength(3)]
         public string Body { get; set; }
 
+        [Required]
         public DateTime Date { get; set; }
     }
 }
